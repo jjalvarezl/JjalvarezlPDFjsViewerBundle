@@ -1,0 +1,96 @@
+{% extends "jjalvarezlPDFjsViewerBundle:viewer:default.html.twig" %}
+
+{% block javascript %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //Options for hiding right the entire toolbar
+            {% if showToolBar is not defined or showToolBar != true %}
+                $('#toolbarContainer').hide();
+            {% endif %}
+
+            //Options for hiding left section of the toolbar
+
+            //Hiding leftbar button option
+            {% if showLeftToolbarButton is not defined or showLeftToolbarButton != true %}
+                $('#sidebarToggle').hide();
+            {% endif %}
+
+            //Hiding search in document button
+            {% if showSearchInDocumentButton is not defined or showSearchInDocumentButton != true %}
+                $('#viewFind').hide();
+            {% endif %}
+
+            //Hiding previous page button
+            {% if showPreviousPageButton is not defined or showPreviousPageButton != true %}
+                $('#previous').hide();
+            {% endif %}
+
+            //Hiding next page button
+            {% if showPreviousPageButton is not defined or showPreviousPageButton != true %}
+                $('#next').hide();
+            {% endif %}
+
+            //Hiding find page input text
+            {% if showFindPageInputText is not defined or showFindPageInputText != true %}
+                $('#pageNumber').hide();
+            {% endif %}
+
+            //Hiding number of pages label
+            {% if showNumberOfPagesLabel is not defined or showNumberOfPagesLabel != true %}
+                $('#numPages').hide();
+            {% endif %}
+
+            //Options for hiding the middle of the toolbar
+
+            //Hiding zoom in button:
+            {% if showZoomInButton is not defined or showZoomInButton != true %}
+                $('#zoomIn').hide();
+            {% endif %}
+
+            //Hiding zoom out button:
+            {% if showZoomOutButton is not defined or showZoomOutButton != true %}
+                $('#zoomOut').hide();
+            {% endif %}
+
+            //Hiding scale select combobox:
+            {% if showScaleSelectComboBox is not defined or showScaleSelectComboBox != true %}
+                $('#scaleSelectContainer').addClass("hidden");
+            {% endif %}
+
+
+            //Options for hiding right section of the toolbar
+
+            //Hiding presentation mode button
+            {% if showPresentationModeButton is not defined or showPresentationModeButton != true %}
+                $('#presentationMode').hide();
+            {% endif %}
+
+            //Hiding open file button
+            {% if showOpenFileButton is not defined or showOpenFileButton != true %}
+            $('#openFile').hide();
+            {% endif %}
+
+            //Hiding print button
+            {% if showPrintButton is not defined or showPrintButton != true %}
+                $('#print').hide();
+            {% endif %}
+
+            //Hiding download button
+            {% if showDownloadButton is not defined or showDownloadButton != true %}
+                $('#download').hide();
+            {% endif %}
+
+            //Hiding view bookmark button
+            {% if showViewBookmarkButton is not defined or showViewBookmarkButton != true %}
+                $('#viewBookmark').hide();
+            {% endif %}
+
+            //Hiding view bookmark button
+            {% if showToolsButton is not defined or showToolsButton != true %}
+                $('#secondaryToolbarToggle').hide();
+            {% endif %}
+        });
+
+    </script>
+{% endblock %}
