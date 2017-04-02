@@ -1,0 +1,17 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+  - 5.6
+
+env:
+  - SYMFONY_VERSION=2.8.*
+  - SYMFONY_VERSION=dev-master
+
+before_script:
+  - composer require symfony/framework-bundle:${SYMFONY_VERSION}
+  
+notifications:
+  email:
+    - nibsirahsieu@gmail.com
