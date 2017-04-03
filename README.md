@@ -120,5 +120,6 @@ Support
 
 * Email: jhon.jairo.alvarez.londono@gmail.com
 
-Please email me if you see something wrong or anormal.
+Please email me if you see something wrong or abnormal.
+
 You can always be a contributor.
