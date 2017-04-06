@@ -19,9 +19,10 @@
         "psr-0": { "jjalvarezl\\PDFjsViewerBundle" : "" }
     },
     "target-dir" : ".",
+    "minimum-stability": "dev",
     "extra" : {
         "branch-alias" : {
-            "dev-master" : "1.0.x-dev"
+            "dev-master" : "@dev"
         }
     }
 }
