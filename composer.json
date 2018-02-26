@@ -12,13 +12,12 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "symfony/framework-bundle": "3.4",
-        "symfony/phpunit-bridge": "^3.2"
+        "symfony/framework-bundle": "3.4.*",
     },
     "autoload": {
         "psr-0": { "jjalvarezl\\PDFjsViewerBundle" : "" }
     },
-    "target-dir" : ".",
+    "target-dir" : "jjalvarezl/PDFjsViewerBundle",
     "minimum-stability": "dev",
     "extra" : {
         "branch-alias" : {
