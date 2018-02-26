@@ -1,8 +1,8 @@
 {
     "name": "jjalvarezl/pdfjs-viewer-bundle",
     "type": "symfony-bundle",
-    "description": "This bundle provides an integration of pdf.js from mozilla with Symfony 2 framework and customizable parameters",
-    "keywords": ["pdfjs", "Symfony", "Symfony2", "pdf viewer"],
+    "description": "This bundle provides an integration of pdf.js from mozilla with Symfony 3 framework and customizable parameters",
+    "keywords": ["pdfjs", "Symfony", "Symfony2",  "Symfony3" "pdf viewer"],
     "license": "MIT",
     "authors": [
         {
@@ -12,13 +12,13 @@
     ],
     "require": {
         "php": ">=5.3.2",
-        "symfony/framework-bundle": "2.8.*",
-        "symfony/phpunit-bridge": "^3.2"
+        "symfony/framework-bundle": "3.*",
+        "symfony/phpunit-bridge": "^3.*"
     },
     "autoload": {
         "psr-0": { "jjalvarezl\\PDFjsViewerBundle" : "" }
     },
-    "target-dir" : ".",
+    "target-dir" : "jjalvarezl/PDFjsViewerBundle",
     "minimum-stability": "dev",
     "extra" : {
         "branch-alias" : {
