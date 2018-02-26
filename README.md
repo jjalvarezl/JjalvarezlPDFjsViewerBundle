@@ -1,7 +1,7 @@
 JjalvarezlPDFjsViewerBundle
 ===========================
 
-[![Build Status](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle.svg?branch=master)](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle)
+[![Build Status](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle.svg?branch=sf2)](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle)
 
 This bundle provides a simple integration of the "[PDF.JS library](https://github.com/mozilla/pdf.js)" from mozilla into Symfony2 with different custom parameters.
 

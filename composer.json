@@ -18,7 +18,7 @@
     "autoload": {
         "psr-0": { "jjalvarezl\\PDFjsViewerBundle" : "" }
     },
-    "target-dir" : ".",
+    "target-dir" : "jjalvarezl/PDFjsViewerBundle",
     "minimum-stability": "dev",
     "extra" : {
         "branch-alias" : {
