@@ -22,7 +22,7 @@
     "minimum-stability": "dev",
     "extra" : {
         "branch-alias" : {
-            "dev-master" : "sf3-dev"
+            "dev-master" : "3.0"
         }
     }
 }
