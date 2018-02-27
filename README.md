@@ -14,6 +14,13 @@ Available at:
 * [Packagist](https://packagist.org/packages/jjalvarezl/pdfjs-viewer-bundle#dev-sf2)
 * [GitHub](https://github.com/jjalvarezl/JjalvarezlPDFjsViewerBundle/tree/sf2)
 
+Why use this?:
+
+* This bundle renders a pdf with on server side. For this reazon you can have an alternative solution to the default browser viewer that can variate the way that a pdf can be loaded on each browser type.
+* This bundle can access files in every part of the server.
+* This bundle can delete the pdf after rendering it.
+
+
 Installation
 ============
 
@@ -42,6 +49,7 @@ public function registerBundles()
     );
 }
 ```
+
 ### 3) Install assets
 
 Don't forget to install assets, is the only way that this bundle works:
