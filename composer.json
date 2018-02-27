@@ -1,8 +1,8 @@
 {
     "name": "jjalvarezl/pdfjs-viewer-bundle",
     "type": "symfony-bundle",
-    "description": "This bundle provides an integration of pdf.js from mozilla with Symfony 4 framework and customizable parameters",
     "keywords": ["pdfjs", "Symfony", "Symfony4", "pdf viewer"],
+    "description": "This bundle provides an integration of pdf.js from mozilla with Symfony 4 framework and customizable parameters on server side",
     "license": "MIT",
     "authors": [
         {
