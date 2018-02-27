@@ -1,14 +1,18 @@
 JjalvarezlPDFjsViewerBundle
 ===========================
 
-[![Build Status](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle.svg?branch=master)](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle)
+[![Build Status](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle.svg?branch=sf3)](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle)
 
-This bundle provides a simple integration of the "[PDF.JS library](https://github.com/mozilla/pdf.js)" from mozilla into Symfony2 with different custom parameters.
+This bundle provides a simple integration of the "[PDF.JS library](https://github.com/mozilla/pdf.js)" from mozilla into Symfony 4 with different custom parameters.
 
 Following features are supported:
 * Access to pdf outside from web directory.
 * Customizable pdf viewer options.
 * PDF.js incorporated until 23/03/2017.
+
+Available at:
+* [Packagist](https://packagist.org/packages/jjalvarezl/pdfjs-viewer-bundle#dev-master)
+* [GitHub](https://github.com/jjalvarezl/JjalvarezlPDFjsViewerBundle/)
 
 Installation
 ============
@@ -72,15 +76,15 @@ This shows same pdf viewer as the **fast testing** but its necessary to configur
 $parameters = array(
         //Tell to the bundle that the pdf is outside the webroot
         'isPdfOutsideWebroot' => true,
-        
+
         //Tell to the bundle where is the pdf. (absolute path for outside temporal folder pdf, just the <name>.pdf for inside temporal folder)
         'pdf' => '/home/jjalvarezl/Descargas/123.pdf',
-        
+
         //Tell to the bundle that its necessary to delete pdf after render.
         'deletePdfInTmpAfterRenderized' => false,
     );
 
-    return $this->get('jjalvarezl_pdfjs_viewer.viewer_controller')->renderDefaultViewer($parameters);
+return $this->get('jjalvarezl_pdfjs_viewer.viewer_controller')->renderDefaultViewer($parameters);
 ```
 
 **Custom viewer**
@@ -110,7 +114,7 @@ $parameters = array(
         'showToolsButton'=> true,
     );
 
-    return $this->get('jjalvarezl_pdfjs_viewer.viewer_controller')->renderCustomViewer($parameters);
+return $this->get('jjalvarezl_pdfjs_viewer.viewer_controller')->renderCustomViewer($parameters);
 ```
 
 Here you can play with this parameters as you wish for customize the pdf viewer.
