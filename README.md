@@ -14,6 +14,12 @@ Available at:
 * [Packagist](https://packagist.org/packages/jjalvarezl/pdfjs-viewer-bundle#dev-master)
 * [GitHub](https://github.com/jjalvarezl/JjalvarezlPDFjsViewerBundle/)
 
+Why use this?:
+
+* This bundle renders a pdf with on server side. For this reazon you can have an alternative solution to the default browser viewer that can variate the way that a pdf can be loaded on each browser type.
+* This bundle can access files in every part of the server.
+* This bundle can delete the pdf after rendering it.
+
 Installation
 ============
 
@@ -43,6 +49,14 @@ public function registerBundles()
 }
 ```
 
+### 3) Install assets
+
+Don't forget to install assets, is the only way that this bundle works:
+
+```
+$ php app/console assets:install --symlink --relative
+```
+
 ## Concepts before usage:
 
 First at all, its necessary to establish some taxonomy an initial concepts in order to understand how it works:
@@ -50,7 +64,7 @@ First at all, its necessary to establish some taxonomy an initial concepts in or
 * **Webroot**: is the web folder of Symfony
 * "[PDF.js](https://github.com/mozilla/pdf.js)" works only in webroot folders in all kind of projects.
 * This bundle enables to "[PDF.js](https://github.com/mozilla/pdf.js)" to show pdf files in any place that you need to obtain them.
-* It makes a temporal copy with the absolute path of the pdf file in a custom temporal dir inside webroot (defined by the developer).
+* It makes a temporal copy with the absolute path of the pdf file in a custom temporal dir inside webroot (defined by the developer). So make sure about the right permissions (files + owner).
 * Once "[PDF.js](https://github.com/mozilla/pdf.js)" loads the pdf file, this bundle can immediately delete it from webroot in order to avoid issues such as disk space overflow.
 * This bundle also can show or hide visual "[PDF.js](https://github.com/mozilla/pdf.js)" components.
 
