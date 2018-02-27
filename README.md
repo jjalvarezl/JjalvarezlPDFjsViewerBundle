@@ -53,7 +53,7 @@ public function registerBundles()
 Don't forget to install assets, is the only way that this bundle works:
 
 ```
-$ php app/console assets:install --symlink --relative
+$ php bin/console assets:install --symlink --relative
 ```
 
 ## Concepts before usage:
