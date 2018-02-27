@@ -42,6 +42,13 @@ public function registerBundles()
     );
 }
 ```
+### 3) Install assets
+
+Don't forget to install assets, is the only way that this bundle works:
+
+```
+$ php app/console assets:install --symlink --relative
+```
 
 ## Concepts before usage:
 
@@ -64,7 +71,7 @@ You can choose from different ways to use this bundle:
 
 You can verify functionality in multiple browsers, you can enable the default "[PDF.js viewer](https://mozilla.github.io/pdf.js/web/viewer.html)" with same loaded pdf in your function controller that returns a response:
 
-```php
+``` php
 return $this->get('jjalvarezl_pdfjs_viewer.viewer_controller')->renderTestViewer();
 ```
 
@@ -72,7 +79,7 @@ return $this->get('jjalvarezl_pdfjs_viewer.viewer_controller')->renderTestViewer
 
 This shows same pdf viewer as the **fast testing** but its necessary to configure some extra parameters:
 
-```php
+``` php
 $parameters = array(
         //Tell to the bundle that the pdf is outside the webroot
         'isPdfOutsideWebroot' => true,
@@ -91,7 +98,7 @@ return $this->get('jjalvarezl_pdfjs_viewer.viewer_controller')->renderDefaultVie
 
 Also, you can customize which elements from viewer you want to display by editing the parameters:
 
-```php
+``` php
 $parameters = array(
         //Same parameters as defalt viewer.
 
