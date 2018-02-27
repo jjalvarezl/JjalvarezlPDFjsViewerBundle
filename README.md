@@ -57,7 +57,7 @@ First at all, its necessary to establish some taxonomy an initial concepts in or
 * **Webroot**: is the web folder of Symfony
 * "[PDF.js](https://github.com/mozilla/pdf.js)" works only in webroot folders in all kind of projects.
 * This bundle enables to "[PDF.js](https://github.com/mozilla/pdf.js)" to show pdf files in any place that you need to obtain them.
-* It makes a temporal copy with the absolute path of the pdf file in a custom temporal dir inside webroot (defined by the developer).
+* It makes a temporal copy with the absolute path of the pdf file in a custom temporal dir inside webroot (defined by the developer). So make sure about the right permissions (files + owner).
 * Once "[PDF.js](https://github.com/mozilla/pdf.js)" loads the pdf file, this bundle can immediately delete it from webroot in order to avoid issues such as disk space overflow.
 * This bundle also can show or hide visual "[PDF.js](https://github.com/mozilla/pdf.js)" components.
 
