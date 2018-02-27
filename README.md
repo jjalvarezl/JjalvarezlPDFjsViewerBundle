@@ -48,7 +48,6 @@ public function registerBundles()
     );
 }
 ```
-
 ### 3) Install assets
 
 Don't forget to install assets, is the only way that this bundle works:
