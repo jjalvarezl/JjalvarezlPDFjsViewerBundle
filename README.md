@@ -37,16 +37,13 @@ Enable the bundle in the kernel:
 
 ``` php
 <?php
-// app/AppKernel.php
+// config/bundles.php
 
-public function registerBundles()
-{
-    $bundles = array(
-        // ...
+return [
+    // ...
 
-        new jjalvarezl\PDFjsViewerBundle\jjalvarezlPDFjsViewerBundle(),
-    );
-}
+    jjalvarezl\PDFjsViewerBundle\jjalvarezlPDFjsViewerBundle:class => ['all' => true],
+];
 ```
 
 ### 3) Install assets
