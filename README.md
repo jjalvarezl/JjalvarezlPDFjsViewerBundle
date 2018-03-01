@@ -1,7 +1,7 @@
 JjalvarezlPDFjsViewerBundle
 ===========================
 
-[![Build Status](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle.svg?branch=sf3)](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle)
+[![Build Status](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle.svg?branch=sf3)](https://travis-ci.org/jjalvarezl/JjalvarezlPDFjsViewerBundle) [![Total Downloads](https://poser.pugx.org/jjalvarezl/pdfjs-viewer-bundle/downloads)](https://packagist.org/packages/jjalvarezl/pdfjs-viewer-bundle) [![Latest Stable Version](https://poser.pugx.org/jjalvarezl/pdfjs-viewer-bundle/version)](https://packagist.org/packages/jjalvarezl/pdfjs-viewer-bundle) [![Latest Unstable Version](https://poser.pugx.org/jjalvarezl/pdfjs-viewer-bundle/v/unstable)](https://packagist.org/packages/jjalvarezl/pdfjs-viewer-bundle) [![License](https://poser.pugx.org/jjalvarezl/pdfjs-viewer-bundle/license)](https://packagist.org/packages/jjalvarezl/pdfjs-viewer-bundle)
 
 This bundle provides a simple integration of the "[PDF.JS library](https://github.com/mozilla/pdf.js)" from mozilla into Symfony 3 with different custom parameters.
 
@@ -139,4 +139,4 @@ Support
 
 Please email me if you see something wrong or abnormal.
 
-You can always be a contributor.
+You can always be a contributor or you can [add an issue here](https://github.com/jjalvarezl/JjalvarezlPDFjsViewerBundle/issues)
