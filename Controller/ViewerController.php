@@ -19,7 +19,7 @@ class ViewerController extends Controller
      * @return final pdf name, it already is inside the temp dir of pdfs
      * @throws \Exception
      */
-    private function solvePDFLocation($isPdfOutsideWebroot, $pdf, $tmpPdfPath)
+    protected function solvePDFLocation($isPdfOutsideWebroot, $pdf, $tmpPdfPath)
     {
         if(!$tmpPdfPath){
             $tmpPdfPath = '/bundles/jjalvarezlpdfjsviewer/tmpPdf/';
