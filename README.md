@@ -42,7 +42,7 @@ Enable the bundle in the kernel:
 return [
     // ...
 
-    jjalvarezl\PDFjsViewerBundle\jjalvarezlPDFjsViewerBundle:class => ['all' => true],
+    jjalvarezl\PDFjsViewerBundle\jjalvarezlPDFjsViewerBundle::class => ['all' => true],
 ];
 ```
 
